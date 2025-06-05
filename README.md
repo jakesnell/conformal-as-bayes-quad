@@ -4,7 +4,7 @@
     <a style="text-decoration:none !important;" href="https://arxiv.org/abs/2502.13228" alt="arXiv"><img src="https://img.shields.io/badge/paper-arXiv-red" /></a>
 </p>
 
-Code to accompany "Conformal Prediction as Bayesian Quadrature" (accepted as a spotlight at ICML 2025).
+Code to accompany "Conformal Prediction as Bayesian Quadrature" by Jake Snell & Tom Griffiths (accepted as a spotlight at ICML 2025).
 
 ## Dependencies
 
