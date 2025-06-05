@@ -40,4 +40,4 @@ First, run `just fetch` to download the necessary data[^1].  Then, follow the sa
 2. Run `just coco-run {method}`, where `{method}` is `crc` for Conformal Risk Control, `rcps` for Risk-controlling Prediction Sets, or `hpd` for our highest posterior density method. This will create a CSV file in `output` that contains the results of the experiment.
 3. To summarize the results, run `just coco-analyze {method}`.
 
-[^1]: Data credit: [conformal prediction](https://github.com/aangelopoulos/conformal-prediction) repository (Angelopoulos & Bates).
+[^1]: Data credit: [conformal-prediction](https://github.com/aangelopoulos/conformal-prediction).
