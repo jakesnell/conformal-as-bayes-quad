@@ -5,7 +5,7 @@
     <a style="text-decoration:none !important;" href="https://opensource.org/licenses/MIT" alt="License"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
 </p>
 
-Code to accompany "Conformal Prediction as Bayesian Quadrature" by Jake Snell & Tom Griffiths (accepted as a spotlight at ICML 2025).
+Code to accompany "Conformal Prediction as Bayesian Quadrature" by [Jake Snell](https://jakesnell.com) & [Tom Griffiths](https://cocosci.princeton.edu/tom/tom.php) (accepted as a spotlight at ICML 2025).
 
 ## Dependencies
 
@@ -13,11 +13,6 @@ Code to accompany "Conformal Prediction as Bayesian Quadrature" by Jake Snell & 
 - [just](https://github.com/casey/just) for running commands
 - [gdown](https://github.com/wkentaro/gdown) for downloading MS-COCO data
 
-## Preparing Data
-
-Run `just fetch`. This will download the data needed to run MS-COCO experiments.
-
-Data credit: [conformal prediction](https://github.com/aangelopoulos/conformal-prediction) repository (Angelopoulos & Bates).
 
 ## Running Tests
 
@@ -36,3 +31,11 @@ Follow the same steps as the synthetic binomial experiments, but replace `synth`
 1. Be sure that the `output` directory exists (e.g. by running `mkdir output`).
 2. Run `just heteroskedastic-run {method}`, where `{method}` is `crc` for Conformal Risk Control, `rcps` for Risk-controlling Prediction Sets, or `hpd` for our highest posterior density method. This will create a CSV file in `output` that contains the results of the experiment.
 3. To summarize the results, run `just heteroskedastic-analyze {method}`.
+
+## Running MS-COCO Experiments
+
+First, run `just fetch` to download the necessary data. Data credit: [conformal prediction](https://github.com/aangelopoulos/conformal-prediction) repository (Angelopoulos & Bates). Then, follow the same steps as the heteroskedastic experiments above but replace `heteroskedastic` with `coco`.
+
+1. Be sure that the `output` directory exists (e.g. by running `mkdir output`).
+2. Run `just coco-run {method}`, where `{method}` is `crc` for Conformal Risk Control, `rcps` for Risk-controlling Prediction Sets, or `hpd` for our highest posterior density method. This will create a CSV file in `output` that contains the results of the experiment.
+3. To summarize the results, run `just coco-analyze {method}`.

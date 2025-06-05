@@ -15,3 +15,9 @@ heteroskedastic-run method:
 
 heteroskedastic-analyze method:
   uv run scripts/heteroskedastic_analyze.py run --method {{method}} --target_risk 0.1
+
+coco-run method:
+  uv run scripts/multilabel_classification.py run --method {{method}} --target_risk 0.1 --num_trials 10000 --batch_size 1000 --out_file output/coco_{{method}}.csv
+
+coco-analyze method:
+  uv run scripts/coco_analyze.py run --method {{method}} --target_risk 0.1
