@@ -34,8 +34,10 @@ Follow the same steps as the synthetic binomial experiments, but replace `synth`
 
 ## Running MS-COCO Experiments
 
-First, run `just fetch` to download the necessary data. Data credit: [conformal prediction](https://github.com/aangelopoulos/conformal-prediction) repository (Angelopoulos & Bates). Then, follow the same steps as the heteroskedastic experiments above but replace `heteroskedastic` with `coco`.
+First, run `just fetch` to download the necessary data[^1].  Then, follow the same steps as the heteroskedastic experiments above but replace `heteroskedastic` with `coco`.
 
 1. Be sure that the `output` directory exists (e.g. by running `mkdir output`).
 2. Run `just coco-run {method}`, where `{method}` is `crc` for Conformal Risk Control, `rcps` for Risk-controlling Prediction Sets, or `hpd` for our highest posterior density method. This will create a CSV file in `output` that contains the results of the experiment.
 3. To summarize the results, run `just coco-analyze {method}`.
+
+[^1]: Data credit: [conformal prediction](https://github.com/aangelopoulos/conformal-prediction) repository (Angelopoulos & Bates).
