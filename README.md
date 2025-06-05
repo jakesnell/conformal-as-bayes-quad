@@ -22,3 +22,17 @@ Data credit: [conformal prediction](https://github.com/aangelopoulos/conformal-p
 ## Running Tests
 
 Run `just test`.
+
+## Running Synthetic Binomial Experiments
+
+1. Be sure that the `output` directory exists (e.g. by running `mkdir output`).
+2. Run `just synth-run {method}`, where `{method}` is `crc` for Conformal Risk Control, `rcps` for Risk-controlling Prediction Sets, or `hpd` for our highest posterior density method. This will create a CSV file in `output` that contains the results of the experiment.
+3. To summarize the results, run `just synth-analyze {method}`.
+
+## Running Synthetic Heteroskedastic Experiments
+
+Follow the same steps as the synthetic binomial experiments, but replace `synth` with `heteroskedastic`.
+
+1. Be sure that the `output` directory exists (e.g. by running `mkdir output`).
+2. Run `just heteroskedastic-run {method}`, where `{method}` is `crc` for Conformal Risk Control, `rcps` for Risk-controlling Prediction Sets, or `hpd` for our highest posterior density method. This will create a CSV file in `output` that contains the results of the experiment.
+3. To summarize the results, run `just heteroskedastic-analyze {method}`.

@@ -5,8 +5,10 @@ description = "Code for Conformal Prediction as Bayesian Quadrature by Jake Snel
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "click>=8.2.1",
     "jax>=0.6.1",
     "jaxopt>=0.8.5",
+    "pandas>=2.3.0",
     "pytest>=8.4.0",
 ]
 
