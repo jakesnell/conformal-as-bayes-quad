@@ -5,7 +5,7 @@
     <a style="text-decoration:none !important;" href="https://opensource.org/licenses/MIT" alt="License"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
 </p>
 
-Code to accompany "Conformal Prediction as Bayesian Quadrature" by [Jake Snell](https://jakesnell.com) & [Tom Griffiths](https://cocosci.princeton.edu/tom/tom.php) (accepted as a spotlight at ICML 2025).
+Code to accompany "Conformal Prediction as Bayesian Quadrature" by [Jake Snell](https://jakesnell.com) & [Tom Griffiths](https://cocosci.princeton.edu/tom/tom.php) (accepted as an oral presentation at ICML 2025).
 
 ## Dependencies
 
